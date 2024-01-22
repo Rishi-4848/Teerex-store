@@ -1,0 +1,42 @@
+.filter__products{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+}
+
+
+.filters__dropmenu{
+ display: none;
+
+}
+
+.filter__icon{
+  font-size: 30px;
+  display: none;
+}
+
+
+@media screen and (max-width:530px) {
+
+  .filter__products{
+    flex-direction: column;
+  }
+
+  .filters__dropmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  
+  }
+
+    .filter__icon{
+      display: block;
+    }
+
+    .main__filters{
+      display: none;
+    }
+}
